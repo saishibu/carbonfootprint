@@ -24,9 +24,9 @@ l3 = random.choice([0, 20])
 l4 = random.choice([0, 20])
 f1 = random.choice([0, 25, 50, 75])
 
-p1 = (s1 + l1)*0.8
-p2 = (s2 + l3)*0.8
-p3 = (s3 + l3)*0.8
+p1 = round((s1 + l1)*0.8,2)
+p2 = round((s2 + l3)*0.8,2)
+p3 = round((s3 + l3)*0.8,2)
 
 total = p1+p2+p3+(l4*0.8)+(f1*0.8)
 
