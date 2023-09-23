@@ -32,4 +32,8 @@ total = p1+p2+p3+(l4*0.8)+(f1*0.8)
 
 data = {'s1':s1, 's2':s2, 's3':s3, 'l1':l1, 'l2':l2, 'l3':l3, 'l4':l4, 'f1':f1, 'p1':p1, 'p2':p2, 'p3':p3, 'total':total}
 cursor.execute("INSERT INTO `carbonfootprint` (`s1`, `s2`, `s3`, `l1`, `l2`, `l3`, `l4`, `f1`, `p1`, `p2`, `p3`, `total`) VALUES (%(s1)s,%(s2)s,%(s3)s,%(l1)s,%(l2)s,%(l3)s,%(l4)s,%(f1)s,%(p1)s,%(p2)s,%(p3)s,%(total)s);",data)
+
+connection.commit()
+connection.close()
+
 print(data)
