@@ -5,7 +5,7 @@ import pymysql
 connection = pymysql.connect(
     host="localhost",
     user="admin",
-    password="amma",
+    password="admin",
     database="AmritaSGM"
 )
 
